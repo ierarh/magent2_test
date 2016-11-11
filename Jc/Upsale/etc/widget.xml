@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Magento/Widget/etc/widget.xsd">
+	<widget id="jc_upsale_product" class="Jc\Upsale\Block\Widget\Upsale">
+		<label translate="true">Up Sale Product Widget</label>
+		<description>Widget Display last upsale product</description>
+	</widget>
+</widgets>
