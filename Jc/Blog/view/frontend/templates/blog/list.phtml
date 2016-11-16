@@ -1,0 +1,18 @@
+<?php
+$posts = $block->getCollection();
+if ($posts->getSize() > 0) :
+	?>
+
+<div class="toolbar top">
+         <?php echo $block->getPagerHtml(); ?>
+      </div>
+<?php
+	foreach ($posts as $post) : ?>
+		<p><a class="post-title" href="<?php echo $this->getUrl('post/index/view',
+				['post_id' => $post->getPostId()]) ?>"><?php echo $post->getTitle(); ?></a></p>
+
+
+<?php 
+	endforeach;
+endif; 
+?>
